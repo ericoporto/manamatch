@@ -1,4 +1,8 @@
 // new module header
+
+// The input layer deals primarily with the mouse input but has also other functions, 
+// it understands logically enough for input and has functions so the stage can poll it
+
 managed struct InputLayer {
   int X;
   int Y;

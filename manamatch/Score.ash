@@ -5,7 +5,7 @@ managed struct Score {
   
   import void StartChain();
   import void NextChain();
-  import void ScoreCellMatches(int count, int cells[]);
+  import void ScoreCellMatches(IntArray* pieces);
   
   import static Score* Create();
 };

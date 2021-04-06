@@ -1,15 +1,6 @@
 // new module header
-enum PieceType {
-  ePiece_None=0, 
-  ePiece_T1, 
-  ePiece_T2, 
-  ePiece_T3, 
-  ePiece_T4, 
-  ePiece_T5, 
-  ePieceMAXTYPES
-};
 
-enum PieceID {};
+#define MAX_PIECES 2048
 
 struct Piece {
   import static PieceType RandomPieceType();
@@ -18,20 +9,25 @@ struct Piece {
   import static void Delete(PieceID id);
   
   import static Point* GetXY(PieceID id);
+  import static int GetX(PieceID id);
+  import static int GetY(PieceID id);
   import static Point* GetRowCol(PieceID id);
   import static PieceType GetType(PieceID id);
+  
+  import static float GetScale(PieceID id);
+  import static int GetTransparency(PieceID id);
   
   import static void SetTsize(PieceID id, int tsize);
   import static void SetXY(PieceID id, Point* p);
   import static void SetRowCol(PieceID id, Point* p);
+  import static void SetScale(PieceID id, float scale);
+  import static void SetTransparency(PieceID id, int transparency);
+  import static void SetPosition(PieceID id, int x, int y);
   
   import static void SyncXYfromRowCol(PieceID id);
   import static Point* PointXYfromRowCol(PieceID id);
   
   import static void SetType(PieceID id, PieceType piece_type);
   
-  import static void Render(PieceID id);
-  import static void Update(PieceID id);
-  
-  import static void TweenPosition(PieceID id, float timing, int toX, int toY, TweenEasingType easingType=Tween_EASING_TYPE, TweenStyle style=Tween_STYLE, float startDelay=Tween_START_DELAY, TweenTimingType timingType=Tween_TIMING);
+  import static void Render(PieceID id); 
 };
