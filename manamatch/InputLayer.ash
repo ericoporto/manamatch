@@ -17,9 +17,18 @@ managed struct InputLayer {
   int ToCell_Row;
   int ToCell_Col;
   
-  import static InputLayer* Create(int x, int y, int width, int height, int tile_size, int numCols, int numRows);
+  
+  protected int _MouseReleaseX;
+  protected int _MouseReleaseY;
+  protected int _MouseClickedX;
+  protected int _MouseClickedY;
+  protected bool _MouseLeftDown;
+  protected bool _MouseSwapUnchecked;
+  
+  import static InputLayer* Create(int x, int y, int width, int height, int tile_size, int numRows, int numCols,);
   
   import Point* GetRowCol_FromXY(int x, int y);
   
+  import void Update();
   import bool HasSwapped();
 };

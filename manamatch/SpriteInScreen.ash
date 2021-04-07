@@ -9,6 +9,6 @@ struct SpriteInScreen {
   float Scale;
   
   import void RenderSprite();  
-  import static void RenderInit();
+  import static void RenderInit(DynamicSprite* spr);
   import static int RenderEnd();
 };

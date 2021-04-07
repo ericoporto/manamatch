@@ -16,6 +16,7 @@ enum GravityDirection {
 };
 
 struct Stage {
+  DynamicSprite* RenderSprite;
   Board* Board;
   Matrix* MxPieces;
   Score* Score;
@@ -23,7 +24,11 @@ struct Stage {
   GravityDirection GravityDir;
   bool ReplacePices;
   
-  import void Init(int numRows, int numCols, int tileSize, GravityDirection dir = eGD_Down);
+  
+  protected GUI* ScoreGui;
+  protected Label* ScoreLabel;
+  
+  import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, GravityDirection dir = eGD_Down);
   
   import void PerformSwap(int row_a, int col_a, int row_b, int col_b);
   import void TrySwap(int from_row, int from_col, int to_row, int to_col);
@@ -36,10 +41,18 @@ struct Stage {
   import IntArray* SlideHoles(GravityDirection dir = eGD_Down);
   import IntArray* CreateNewPices(GravityDirection dir = eGD_Down);
   
+  import protected void UpdateVisualScore();
   import protected Point* _GetSpawnPos(Point* emptyPos, IntArray* countsByLine, GravityDirection dir);
   import protected void _CheckAfterRemove();
   import protected void _CheckAfterTrySwap();
   import protected void _CheckAfterSlide();
+  
+  
+  protected Timer* _TimerAfterTrySwap;
+  protected Timer* _TimerAfterRemove;
+  protected Timer* _TimerAfterSlide;
+  protected IntArray* _CellsToRemove;
+  protected bool _TwiceRemoveSlide;
   
   import int Render();
   import void Update();

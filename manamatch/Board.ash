@@ -3,7 +3,7 @@
 //Matrix* matrix,
 
 managed struct Board extends BoardData{
-  import static Board* Create(Point* widthHeight, Point* rowsCols, Matrix* mxPieces, int tileSize);
+  import static Board* Create(Point* pxPosition, Point* widthHeight, Point* rowsCols, Matrix* mxPieces, int tileSize);
   
   import static void Clear(Matrix* mxPieces);
   import void RandomFill(Matrix* mxPieces);
