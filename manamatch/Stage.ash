@@ -28,18 +28,20 @@ struct Stage {
   protected GUI* ScoreGui;
   protected Label* ScoreLabel;
   
+  import void Delete();
   import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, GravityDirection dir = eGD_Down);
   
   import void PerformSwap(int row_a, int col_a, int row_b, int col_b);
   import void TrySwap(int from_row, int from_col, int to_row, int to_col);
   
-  // I think most of the below will be protected
   import bool HasMatchAt(int row, int col);
-  import IntArray* DetectMatchesInDir(MatchDirection dir);
-  import void RemoveMatches();
-  import PieceID CellAtDir(int row, int col,  GravityDirection dir = eGD_Down);
-  import IntArray* SlideHoles(GravityDirection dir = eGD_Down);
-  import IntArray* CreateNewPices(GravityDirection dir = eGD_Down);
+  
+  // I think most of the below will be protected
+  import protected IntArray* DetectMatchesInDir(MatchDirection dir);
+  import protected void RemoveMatches();
+  import protected PieceID CellAtDir(int row, int col,  GravityDirection dir = eGD_Down);
+  import protected IntArray* SlideHoles(GravityDirection dir = eGD_Down);
+  import protected IntArray* CreateNewPices(GravityDirection dir = eGD_Down);
   
   import protected void UpdateVisualScore();
   import protected Point* _GetSpawnPos(Point* emptyPos, IntArray* countsByLine, GravityDirection dir);

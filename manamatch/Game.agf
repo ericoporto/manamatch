@@ -78,8 +78,8 @@
       <SaveGameFileExtension />
       <SaveGameFolderName>ManaMatch</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>0</AudioIndexer>
-      <BuildTargets>Windows</BuildTargets>
+      <AudioIndexer>8</AudioIndexer>
+      <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
     </Settings>
     <RuntimeSetup>
@@ -643,8 +643,16 @@
         <SubFolders />
         <UnloadedRooms>
           <UnloadedRoom>
-            <Number>1</Number>
-            <Description IsNull="True" />
+            <Number>301</Number>
+            <Description xml:space="preserve">Home Room</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>302</Number>
+            <Description xml:space="preserve">Arcade Room</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>303</Number>
+            <Description xml:space="preserve">VS Room</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -695,10 +703,10 @@
           <GUIMain>
             <NormalGUI>
               <OnClick />
-              <Height>32</Height>
-              <Width>32</Width>
-              <Left>0</Left>
-              <Top>0</Top>
+              <Height>64</Height>
+              <Width>16</Width>
+              <Left>4</Left>
+              <Top>4</Top>
               <Clickable>True</Clickable>
               <Visible>True</Visible>
               <PopupStyle>Normal</PopupStyle>
@@ -720,21 +728,45 @@
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
                 <Font>0</Font>
-                <PushedImage>59</PushedImage>
-                <MouseoverImage>41</MouseoverImage>
+                <PushedImage>83</PushedImage>
+                <MouseoverImage>53</MouseoverImage>
                 <Image>23</Image>
                 <Text />
                 <Height>16</Height>
                 <Locked>False</Locked>
                 <Width>16</Width>
-                <Left>4</Left>
-                <Top>4</Top>
+                <Left>0</Left>
+                <Top>0</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
                 <Name>btn_uifloat_settings</Name>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>101</PushedImage>
+                <MouseoverImage>71</MouseoverImage>
+                <Image>41</Image>
+                <Text />
+                <Height>16</Height>
+                <Locked>False</Locked>
+                <Width>16</Width>
+                <Left>0</Left>
+                <Top>48</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>btn_uifloat_windowed</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>False</Visible>
               </GUIButton>
             </Controls>
           </GUIMain>
@@ -982,7 +1014,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>1</StartingRoom>
+            <StartingRoom>301</StartingRoom>
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -1450,7 +1482,18 @@
       <PaletteEntry Index="255" Type="Background" Red="120" Green="120" Blue="120" />
     </Palette>
     <GlobalVariables>
-      <Variables />
+      <Variables>
+        <GlobalVariable>
+          <Name>bool_is_mobile</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>bool_is_web</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+      </Variables>
     </GlobalVariables>
     <Sprites>
       <SpriteFolder Name="Main">
@@ -2037,16 +2080,11 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                    </Sprites>
-                  </SpriteFolder>
-                  <SpriteFolder Name="Over">
-                    <SubFolders />
-                    <Sprites>
                       <Sprite Slot="41" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>0</OffsetX>
-                          <OffsetY>0</OffsetY>
+                          <OffsetY>48</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2059,9 +2097,9 @@
                       </Sprite>
                       <Sprite Slot="42" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>16</OffsetX>
-                          <OffsetY>0</OffsetY>
+                          <OffsetY>48</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2074,9 +2112,9 @@
                       </Sprite>
                       <Sprite Slot="43" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>32</OffsetX>
-                          <OffsetY>0</OffsetY>
+                          <OffsetY>48</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2089,9 +2127,9 @@
                       </Sprite>
                       <Sprite Slot="44" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>48</OffsetX>
-                          <OffsetY>0</OffsetY>
+                          <OffsetY>48</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2104,9 +2142,9 @@
                       </Sprite>
                       <Sprite Slot="45" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>64</OffsetX>
-                          <OffsetY>0</OffsetY>
+                          <OffsetY>48</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2119,9 +2157,9 @@
                       </Sprite>
                       <Sprite Slot="46" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>80</OffsetX>
-                          <OffsetY>0</OffsetY>
+                          <OffsetY>48</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2134,9 +2172,9 @@
                       </Sprite>
                       <Sprite Slot="47" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>0</OffsetX>
-                          <OffsetY>16</OffsetY>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2149,9 +2187,9 @@
                       </Sprite>
                       <Sprite Slot="48" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>16</OffsetX>
-                          <OffsetY>16</OffsetY>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2164,9 +2202,9 @@
                       </Sprite>
                       <Sprite Slot="49" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>32</OffsetX>
-                          <OffsetY>16</OffsetY>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2179,9 +2217,9 @@
                       </Sprite>
                       <Sprite Slot="50" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>48</OffsetX>
-                          <OffsetY>16</OffsetY>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2194,9 +2232,9 @@
                       </Sprite>
                       <Sprite Slot="51" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>64</OffsetX>
-                          <OffsetY>16</OffsetY>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2209,9 +2247,9 @@
                       </Sprite>
                       <Sprite Slot="52" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
-                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <FileName>Sprites/GUI/Buttons/button_16x_normal.png</FileName>
                           <OffsetX>80</OffsetX>
-                          <OffsetY>16</OffsetY>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2222,11 +2260,16 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
+                    </Sprites>
+                  </SpriteFolder>
+                  <SpriteFolder Name="Over">
+                    <SubFolders />
+                    <Sprites>
                       <Sprite Slot="53" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
                           <OffsetX>0</OffsetX>
-                          <OffsetY>32</OffsetY>
+                          <OffsetY>0</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2241,7 +2284,7 @@
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
                           <OffsetX>16</OffsetX>
-                          <OffsetY>32</OffsetY>
+                          <OffsetY>0</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2256,7 +2299,7 @@
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
                           <OffsetX>32</OffsetX>
-                          <OffsetY>32</OffsetY>
+                          <OffsetY>0</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2271,7 +2314,7 @@
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
                           <OffsetX>48</OffsetX>
-                          <OffsetY>32</OffsetY>
+                          <OffsetY>0</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2286,7 +2329,7 @@
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
                           <OffsetX>64</OffsetX>
-                          <OffsetY>32</OffsetY>
+                          <OffsetY>0</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2301,7 +2344,367 @@
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
                           <OffsetX>80</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="59" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>16</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="60" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>16</OffsetX>
+                          <OffsetY>16</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="61" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>32</OffsetX>
+                          <OffsetY>16</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="62" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>48</OffsetX>
+                          <OffsetY>16</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="63" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>64</OffsetX>
+                          <OffsetY>16</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="64" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>80</OffsetX>
+                          <OffsetY>16</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="65" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>0</OffsetX>
                           <OffsetY>32</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="66" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>16</OffsetX>
+                          <OffsetY>32</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="67" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>32</OffsetX>
+                          <OffsetY>32</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="68" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>48</OffsetX>
+                          <OffsetY>32</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="69" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>64</OffsetX>
+                          <OffsetY>32</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="70" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>80</OffsetX>
+                          <OffsetY>32</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="71" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="72" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>16</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="73" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>32</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="74" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>48</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="75" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>64</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="76" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>80</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="77" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="78" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>16</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="79" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>32</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="80" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>48</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="81" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>64</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="82" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_over.png</FileName>
+                          <OffsetX>80</OffsetX>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2317,7 +2720,7 @@
                   <SpriteFolder Name="Pressed">
                     <SubFolders />
                     <Sprites>
-                      <Sprite Slot="59" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="83" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>0</OffsetX>
@@ -2332,7 +2735,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="60" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="84" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>16</OffsetX>
@@ -2347,7 +2750,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="61" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="85" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>32</OffsetX>
@@ -2362,7 +2765,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="62" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="86" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>48</OffsetX>
@@ -2377,7 +2780,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="63" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="87" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>64</OffsetX>
@@ -2392,7 +2795,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="64" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="88" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>80</OffsetX>
@@ -2407,7 +2810,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="65" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="89" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>0</OffsetX>
@@ -2422,7 +2825,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="66" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="90" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>16</OffsetX>
@@ -2437,7 +2840,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="67" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="91" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>32</OffsetX>
@@ -2452,7 +2855,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="68" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="92" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>48</OffsetX>
@@ -2467,7 +2870,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="69" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="93" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>64</OffsetX>
@@ -2482,7 +2885,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="70" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="94" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>80</OffsetX>
@@ -2497,7 +2900,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="71" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="95" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>0</OffsetX>
@@ -2512,7 +2915,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="72" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="96" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>16</OffsetX>
@@ -2527,7 +2930,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="73" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="97" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>32</OffsetX>
@@ -2542,7 +2945,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="74" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="98" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>48</OffsetX>
@@ -2557,7 +2960,7 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="75" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="99" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>64</OffsetX>
@@ -2572,11 +2975,191 @@
                           <ImportAlphaChannel>True</ImportAlphaChannel>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="76" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                      <Sprite Slot="100" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                         <Source>
                           <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
                           <OffsetX>80</OffsetX>
                           <OffsetY>32</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="101" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="102" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>16</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="103" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>32</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="104" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>48</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="105" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>64</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="106" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>80</OffsetX>
+                          <OffsetY>48</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="107" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="108" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>16</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="109" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>32</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="110" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>48</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="111" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>64</OffsetX>
+                          <OffsetY>64</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="112" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Buttons/button_16x_pressed.png</FileName>
+                          <OffsetX>80</OffsetX>
+                          <OffsetY>64</OffsetY>
                           <ImportHeight>16</ImportHeight>
                           <ImportWidth>16</ImportWidth>
                           <ImportAsTile>True</ImportAsTile>
@@ -2928,6 +3511,64 @@
               </ScriptAndHeader>
             </ScriptAndHeaders>
           </ScriptFolder>
+          <ScriptFolder Name="System">
+            <SubFolders />
+            <ScriptAndHeaders>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>Platform.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1586267611</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>Platform.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1586267611</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+            </ScriptAndHeaders>
+          </ScriptFolder>
+          <ScriptFolder Name="Helpers">
+            <SubFolders />
+            <ScriptAndHeaders>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>sound_helper.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1626307952</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>sound_helper.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1626307952</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+            </ScriptAndHeaders>
+          </ScriptFolder>
           <ScriptFolder Name="Render">
             <SubFolders />
             <ScriptAndHeaders>
@@ -3116,6 +3757,30 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
+                <FileName>Audiator.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1758871544</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>Audiator.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1758871544</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
                 <FileName>Animator.ash</FileName>
                 <Name />
                 <Description />
@@ -3260,6 +3925,30 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
+                <FileName>Menu.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1777330371</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>Menu.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1777330371</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
                 <FileName>GlobalScript.ash</FileName>
                 <Name />
                 <Description />
@@ -3289,24 +3978,141 @@
         <SubFolders>
           <AudioClipFolder Name="Music">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <ScriptName>aMus_arcade_lvl01</ScriptName>
+                <ID>6</ID>
+                <SourceFileName>Sounds/Music/mus_arcade_lvl01.ogg</SourceFileName>
+                <Index>7</Index>
+                <Type>2</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-04-08 00:50:57Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aMus_menu</ScriptName>
+                <ID>7</ID>
+                <SourceFileName>Sounds/Music/mus_menu.ogg</SourceFileName>
+                <Index>8</Index>
+                <Type>2</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-04-08 00:49:22Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultVolume>100</DefaultVolume>
               <DefaultPriority>Inherit</DefaultPriority>
               <DefaultRepeat>True</DefaultRepeat>
-              <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
+              <DefaultBundlingType>InGameEXE</DefaultBundlingType>
               <DefaultType>2</DefaultType>
             </AudioClipFolder>
           </AudioClipFolder>
           <AudioClipFolder Name="Sounds">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <ScriptName>aSfx_piece_drop</ScriptName>
+                <ID>0</ID>
+                <SourceFileName>Sounds/SFX/Board/sfx_piece_drop.ogg</SourceFileName>
+                <Index>1</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2019-11-26 11:36:28Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aSfx_piece_move</ScriptName>
+                <ID>1</ID>
+                <SourceFileName>Sounds/SFX/Board/sfx_piece_move.ogg</SourceFileName>
+                <Index>2</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2020-02-16 15:08:46Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aSfx_piece_swap</ScriptName>
+                <ID>2</ID>
+                <SourceFileName>Sounds/SFX/Board/sfx_piece_swap.ogg</SourceFileName>
+                <Index>3</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2020-02-16 15:08:45Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aSfx_piece_blow_1</ScriptName>
+                <ID>3</ID>
+                <SourceFileName>Sounds/SFX/Board/sfx_piece_blow_1.ogg</SourceFileName>
+                <Index>4</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-04-08 00:28:52Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aSfx_piece_blow_2</ScriptName>
+                <ID>4</ID>
+                <SourceFileName>Sounds/SFX/Board/sfx_piece_blow_2.ogg</SourceFileName>
+                <Index>5</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-04-08 00:29:31Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aSfx_piece_blow_3</ScriptName>
+                <ID>5</ID>
+                <SourceFileName>Sounds/SFX/Board/sfx_piece_blow_3.ogg</SourceFileName>
+                <Index>6</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-04-08 00:30:13Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultVolume>100</DefaultVolume>
               <DefaultPriority>Inherit</DefaultPriority>
               <DefaultRepeat>False</DefaultRepeat>
               <DefaultBundlingType>InGameEXE</DefaultBundlingType>
               <DefaultType>3</DefaultType>
+            </AudioClipFolder>
+          </AudioClipFolder>
+          <AudioClipFolder Name="Ambient">
+            <SubFolders />
+            <AudioClips />
+            <AudioClipFolder>
+              <DefaultVolume>100</DefaultVolume>
+              <DefaultPriority>Inherit</DefaultPriority>
+              <DefaultRepeat>Inherit</DefaultRepeat>
+              <DefaultBundlingType>InGameEXE</DefaultBundlingType>
+              <DefaultType>1</DefaultType>
             </AudioClipFolder>
           </AudioClipFolder>
         </SubFolders>
