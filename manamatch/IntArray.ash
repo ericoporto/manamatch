@@ -9,4 +9,5 @@ managed struct IntArray {
   import IntArray* Join(IntArray* arr);
   import IntArray* Unique();
   import void Push(int item);
+  import void Pop();
 };

@@ -2,6 +2,11 @@
 
 enum PieceID {};
 
+enum PieceState {
+  ePState_Normal=0, 
+  ePState_Removing, 
+};
+
 enum PieceType {
   ePiece_None=0, 
   ePiece_T1, 
@@ -16,7 +21,8 @@ struct PieceData extends SpriteInScreen {
   PieceID ID;
   BoardData* board;
   PieceType type;
+  PieceState State;
   int row;
   int col;
-  int tsize;
+  int tsize;  
 };

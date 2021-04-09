@@ -36,7 +36,11 @@ struct Stage {
   
   import bool HasMatchAt(int row, int col);
   
+  /// this removes any leftovers if they exist...
+  import protected void RemoveRemovingPieces();
+  
   // I think most of the below will be protected
+  import protected void DeletePiece(PieceID id);
   import protected IntArray* DetectMatchesInDir(MatchDirection dir);
   import protected void RemoveMatches();
   import protected PieceID CellAtDir(int row, int col,  GravityDirection dir = eGD_Down);

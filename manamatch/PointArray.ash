@@ -16,4 +16,5 @@ managed struct PointArray {
   import PointArray* Join(PointArray* arr);
   import PointArray* Unique();
   import void Push(Point* item);
+  import void Pop();
 };
