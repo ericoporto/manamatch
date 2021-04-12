@@ -14,6 +14,7 @@ enum PieceType {
   ePiece_T3, 
   ePiece_T4, 
   ePiece_T5, 
+  ePiece_T6, 
   ePieceMAXTYPES
 };
 

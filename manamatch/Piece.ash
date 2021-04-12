@@ -2,11 +2,7 @@
 
 #define MAX_PIECES 2048
 
-struct Piece {
-  
-  /// gets a random piece from the existing types, will probably be moved to a different place soon...  
-  import static PieceType RandomPieceType();
-  
+struct Piece { 
   /// Creates a new Piece and returns the ID, use this id to manipulate further
   import static PieceID New(PieceType piece_type, int tsize, Point* xy, Point* posRowCol, BoardData* board);
   /// Deletes a Piece by ID

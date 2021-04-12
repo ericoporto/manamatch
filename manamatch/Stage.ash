@@ -16,20 +16,22 @@ enum GravityDirection {
 };
 
 struct Stage {
-  DynamicSprite* RenderSprite;
-  Board* Board;
-  Matrix* MxPieces;
+  protected TypeRandomizer* TypeRandomizer;
+  protected DynamicSprite* RenderSprite;
+  protected Board* Board;
+  protected Matrix* MxPieces;
   Score* Score;
-  InputLayer* InputLayer;
+  protected InputLayer* InputLayer;
   GravityDirection GravityDir;
-  bool ReplacePices;
+  bool ReplacePieces;
   
   
   protected GUI* ScoreGui;
   protected Label* ScoreLabel;
-  
+   
   import void Delete();
-  import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, GravityDirection dir = eGD_Down);
+  import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, String typeProbabilities = 0, GravityDirection dir = eGD_Down);
+  import void SetTypeProbabilities(String typeProbabilities);
   
   import void PerformSwap(int row_a, int col_a, int row_b, int col_b);
   import void TrySwap(int from_row, int from_col, int to_row, int to_col);

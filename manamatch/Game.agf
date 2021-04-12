@@ -10,7 +10,7 @@
       <ColorDepth>TrueColor</ColorDepth>
       <CustomResolution>320,180</CustomResolution>
       <AllowRelativeAssetResolutions>False</AllowRelativeAssetResolutions>
-      <CompressSprites>False</CompressSprites>
+      <CompressSprites>True</CompressSprites>
       <SaveScreenshots>False</SaveScreenshots>
       <RoomTransition>FadeOutAndIn</RoomTransition>
       <MouseWheelEnabled>True</MouseWheelEnabled>
@@ -78,7 +78,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName>ManaMatch</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>8</AudioIndexer>
+      <AudioIndexer>9</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
     </Settings>
@@ -1501,13 +1501,13 @@
           <SpriteFolder Name="Pieces">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="1" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="1" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1516,13 +1516,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="2" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="2" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>16</OffsetX>
+                  <OffsetX>22</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1531,13 +1531,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="3" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="3" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>32</OffsetX>
+                  <OffsetX>44</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1546,13 +1546,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="4" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="4" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>48</OffsetX>
+                  <OffsetX>66</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1561,13 +1561,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="5" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="5" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>64</OffsetX>
+                  <OffsetX>88</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1576,13 +1576,88 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="6" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="6" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>110</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="7" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>132</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="8" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>154</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="9" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="10" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>198</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="11" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
                   <OffsetX>0</OffsetX>
-                  <OffsetY>16</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1591,13 +1666,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="7" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="12" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>16</OffsetX>
-                  <OffsetY>16</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>22</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1606,13 +1681,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="8" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="13" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>32</OffsetX>
-                  <OffsetY>16</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>44</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1621,13 +1696,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="9" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="14" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>48</OffsetX>
-                  <OffsetY>16</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>66</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1636,13 +1711,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="10" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="15" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>64</OffsetX>
-                  <OffsetY>16</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>88</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1651,13 +1726,88 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="11" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="16" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>110</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="17" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>132</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="18" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>154</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="19" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="20" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>198</OffsetX>
+                  <OffsetY>22</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="113" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
                   <OffsetX>0</OffsetX>
-                  <OffsetY>32</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1666,13 +1816,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="12" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="114" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>16</OffsetX>
-                  <OffsetY>32</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>22</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1681,13 +1831,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="13" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="115" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>32</OffsetX>
-                  <OffsetY>32</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>44</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1696,13 +1846,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="14" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="116" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>48</OffsetX>
-                  <OffsetY>32</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>66</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1711,13 +1861,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="15" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="117" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>64</OffsetX>
-                  <OffsetY>32</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>88</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1726,13 +1876,88 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="16" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="118" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>110</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="119" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>132</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="120" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>154</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="121" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="122" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>198</OffsetX>
+                  <OffsetY>44</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="123" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
                   <OffsetX>0</OffsetX>
-                  <OffsetY>48</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1741,13 +1966,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="17" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="124" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>16</OffsetX>
-                  <OffsetY>48</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>22</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1756,13 +1981,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="18" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="125" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>32</OffsetX>
-                  <OffsetY>48</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>44</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1771,13 +1996,13 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="19" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="126" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>48</OffsetX>
-                  <OffsetY>48</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>66</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -1786,13 +2011,88 @@
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="20" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="127" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
                   <FileName>Sprites/Pieces/pieces_00.png</FileName>
-                  <OffsetX>64</OffsetX>
-                  <OffsetY>48</OffsetY>
-                  <ImportHeight>16</ImportHeight>
-                  <ImportWidth>16</ImportWidth>
+                  <OffsetX>88</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="128" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>110</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="129" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>132</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="130" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>154</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="131" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
+                  <ImportAsTile>True</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="132" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Pieces/pieces_00.png</FileName>
+                  <OffsetX>198</OffsetX>
+                  <OffsetY>66</OffsetY>
+                  <ImportHeight>22</ImportHeight>
+                  <ImportWidth>22</ImportWidth>
                   <ImportAsTile>True</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -3320,6 +3620,54 @@
               <ScriptAndHeader>
                 <ScriptAndHeader_Header>
                   <Script>
+                    <FileName>StringUtils.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>638533516</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>StringUtils.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>638533516</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>dicttoini.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>779373685</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>dicttoini.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>779373685</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
                     <FileName>Point.ash</FileName>
                     <Name />
                     <Description />
@@ -3726,10 +4074,58 @@
                   </Script>
                 </ScriptAndHeader_Script>
               </ScriptAndHeader>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>TypeRandomizer.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>235145745</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>TypeRandomizer.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>235145745</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
             </ScriptAndHeaders>
           </ScriptFolder>
         </SubFolders>
         <ScriptAndHeaders>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>EndlessLevel.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1976744138</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>EndlessLevel.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1976744138</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
@@ -4004,6 +4400,19 @@
                 <DefaultPriority>Inherit</DefaultPriority>
                 <DefaultRepeat>Inherit</DefaultRepeat>
                 <FileLastModifiedDate>2021-04-08 00:49:22Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aMus_arcade_lvl02</ScriptName>
+                <ID>8</ID>
+                <SourceFileName>Sounds/Music/mus_arcade_lvl02.ogg</SourceFileName>
+                <Index>9</Index>
+                <Type>2</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-04-08 00:51:53Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
