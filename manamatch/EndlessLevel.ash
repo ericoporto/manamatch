@@ -7,7 +7,7 @@ struct EndlessLevel{
   int Level;
   int LevelCount;
   import bool IsScoreBeyondThreshold(int score);
-  import void LevelUp();
+  import bool LevelUp();
   import void PushLevel(int scoreThreshold, String typeProbability);
   import String GetLevelProbabilities();
 };
