@@ -25,7 +25,9 @@ managed struct InputLayer {
   protected bool _MouseLeftDown;
   protected bool _MouseSwapUnchecked;
   
-  import static InputLayer* Create(int x, int y, int width, int height, int tile_size, int numRows, int numCols,);
+  import static InputLayer* Create(int x, int y, int width, int height, int tile_size, int numRows, int numCols);
+  
+  import void AdjustSize(int x, int y, int width, int height, int tile_size, int numRows, int numCols);
   
   import Point* GetRowCol_FromXY(int x, int y);
   

@@ -1,5 +1,9 @@
 // new module header
 managed struct BoardData {
+  
+  int PositionX_px;
+  int PositionY_px;
+  
   int MarginLeft;
   int MarginTop;
   int Width;
