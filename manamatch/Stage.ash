@@ -25,6 +25,7 @@ struct Stage {
   GravityDirection GravityDir;
   bool ReplacePieces;
   bool CountMoves;  
+  protected bool IsEditMode;
   
   protected GUI* ScoreGui;
   protected Label* ScoreLabel;
@@ -33,6 +34,12 @@ struct Stage {
   import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, String levelDescription = 0, GravityDirection dir = eGD_Down);
   import void SetTypeProbabilities(String typeProbabilities);
   import void LoadBoardFromString(String boardStr);
+  import String GetBoardString();
+  
+  import void SetEditMode(bool isEdit);
+  
+  import Point* GetRowColSize();
+  import void ResizeRowCol(int numRows, int numCols);
   
   import void PerformSwap(int row_a, int col_a, int row_b, int col_b);
   import void TrySwap(int from_row, int from_col, int to_row, int to_col);

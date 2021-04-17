@@ -652,6 +652,10 @@
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>303</Number>
+            <Description xml:space="preserve">Editor Puzzle Room</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>304</Number>
             <Description xml:space="preserve">VS Room</Description>
           </UnloadedRoom>
         </UnloadedRooms>
@@ -703,7 +707,7 @@
           <GUIMain>
             <NormalGUI>
               <OnClick />
-              <Height>50</Height>
+              <Height>80</Height>
               <Width>20</Width>
               <Left>4</Left>
               <Top>4</Top>
@@ -752,21 +756,45 @@
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
                 <Font>0</Font>
-                <PushedImage>84</PushedImage>
-                <MouseoverImage>54</MouseoverImage>
-                <Image>24</Image>
+                <PushedImage>104</PushedImage>
+                <MouseoverImage>74</MouseoverImage>
+                <Image>44</Image>
                 <Text />
                 <Height>20</Height>
-                <Locked>False</Locked>
+                <Locked>True</Locked>
                 <Width>20</Width>
                 <Left>0</Left>
                 <Top>30</Top>
                 <ZOrder>1</ZOrder>
                 <ID>1</ID>
-                <Name>btn_uifloat_windowed1</Name>
+                <Name>btn_uifloat_audio</Name>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <Visible>False</Visible>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>89</PushedImage>
+                <MouseoverImage>59</MouseoverImage>
+                <Image>29</Image>
+                <Text />
+                <Height>20</Height>
+                <Locked>False</Locked>
+                <Width>20</Width>
+                <Left>0</Left>
+                <Top>60</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>btn_uifloat_music</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
               </GUIButton>
             </Controls>
           </GUIMain>
@@ -853,6 +881,453 @@
                 <Enabled>True</Enabled>
                 <Visible>False</Visible>
               </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>134</Height>
+              <Width>53</Width>
+              <Left>266</Left>
+              <Top>8</Top>
+              <Clickable>True</Clickable>
+              <Visible>False</Visible>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>177</BackgroundImage>
+              <ID>4</ID>
+              <Name>gBoardEditor</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>143</PushedImage>
+                <MouseoverImage>142</MouseoverImage>
+                <Image>141</Image>
+                <Text />
+                <Height>11</Height>
+                <Locked>False</Locked>
+                <Width>23</Width>
+                <Left>27</Left>
+                <Top>14</Top>
+                <ZOrder>1</ZOrder>
+                <ID>0</ID>
+                <Name>Editor_Btn_T1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>146</PushedImage>
+                <MouseoverImage>145</MouseoverImage>
+                <Image>144</Image>
+                <Text />
+                <Height>11</Height>
+                <Locked>False</Locked>
+                <Width>23</Width>
+                <Left>27</Left>
+                <Top>25</Top>
+                <ZOrder>2</ZOrder>
+                <ID>1</ID>
+                <Name>Editor_Btn_T2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>149</PushedImage>
+                <MouseoverImage>148</MouseoverImage>
+                <Image>147</Image>
+                <Text />
+                <Height>11</Height>
+                <Locked>False</Locked>
+                <Width>23</Width>
+                <Left>27</Left>
+                <Top>36</Top>
+                <ZOrder>3</ZOrder>
+                <ID>2</ID>
+                <Name>Editor_Btn_T3</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>152</PushedImage>
+                <MouseoverImage>151</MouseoverImage>
+                <Image>150</Image>
+                <Text />
+                <Height>11</Height>
+                <Locked>False</Locked>
+                <Width>23</Width>
+                <Left>27</Left>
+                <Top>47</Top>
+                <ZOrder>4</ZOrder>
+                <ID>3</ID>
+                <Name>Editor_Btn_T4</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>155</PushedImage>
+                <MouseoverImage>154</MouseoverImage>
+                <Image>153</Image>
+                <Text />
+                <Height>11</Height>
+                <Locked>False</Locked>
+                <Width>23</Width>
+                <Left>27</Left>
+                <Top>58</Top>
+                <ZOrder>5</ZOrder>
+                <ID>4</ID>
+                <Name>Editor_Btn_T5</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>158</PushedImage>
+                <MouseoverImage>157</MouseoverImage>
+                <Image>156</Image>
+                <Text />
+                <Height>11</Height>
+                <Locked>False</Locked>
+                <Width>23</Width>
+                <Left>27</Left>
+                <Top>69</Top>
+                <ZOrder>6</ZOrder>
+                <ID>5</ID>
+                <Name>Editor_Btn_T6</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>140</PushedImage>
+                <MouseoverImage>139</MouseoverImage>
+                <Image>138</Image>
+                <Text />
+                <Height>11</Height>
+                <Locked>True</Locked>
+                <Width>23</Width>
+                <Left>27</Left>
+                <Top>80</Top>
+                <ZOrder>0</ZOrder>
+                <ID>6</ID>
+                <Name>Editor_Btn_TClear</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>51199</TextColor>
+                <Font>4</Font>
+                <Text>4x4</Text>
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>48</Width>
+                <Left>3</Left>
+                <Top>93</Top>
+                <ZOrder>7</ZOrder>
+                <ID>7</ID>
+                <Name>Editor_label_dim1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>MiddleCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>107</PushedImage>
+                <MouseoverImage>77</MouseoverImage>
+                <Image>47</Image>
+                <Text />
+                <Height>20</Height>
+                <Locked>False</Locked>
+                <Width>20</Width>
+                <Left>28</Left>
+                <Top>110</Top>
+                <ZOrder>8</ZOrder>
+                <ID>8</ID>
+                <Name>Editor_Btn_Load</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>106</PushedImage>
+                <MouseoverImage>76</MouseoverImage>
+                <Image>46</Image>
+                <Text />
+                <Height>20</Height>
+                <Locked>True</Locked>
+                <Width>20</Width>
+                <Left>4</Left>
+                <Top>110</Top>
+                <ZOrder>9</ZOrder>
+                <ID>9</ID>
+                <Name>Editor_Btn_Save</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>170</PushedImage>
+                <MouseoverImage>169</MouseoverImage>
+                <Image>168</Image>
+                <Text />
+                <Height>16</Height>
+                <Locked>True</Locked>
+                <Width>23</Width>
+                <Left>3</Left>
+                <Top>75</Top>
+                <ZOrder>10</ZOrder>
+                <ID>10</ID>
+                <Name>Editor_Btn_Dimension</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>176</PushedImage>
+                <MouseoverImage>175</MouseoverImage>
+                <Image>174</Image>
+                <Text />
+                <Height>17</Height>
+                <Locked>True</Locked>
+                <Width>23</Width>
+                <Left>3</Left>
+                <Top>14</Top>
+                <ZOrder>11</ZOrder>
+                <ID>11</ID>
+                <Name>Editor_Btn_PlayEdit</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>180</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visible>False</Visible>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>178</BackgroundImage>
+              <ID>5</ID>
+              <Name>gBoardEditor_Dim</Name>
+            </NormalGUI>
+            <Controls>
+              <GUISlider>
+                <OnChange>Editor_Sdlr_OnChange</OnChange>
+                <HandleImage>180</HandleImage>
+                <HandleOffset>-1</HandleOffset>
+                <BackgroundImage>179</BackgroundImage>
+                <MinValue>4</MinValue>
+                <MaxValue>8</MaxValue>
+                <Value>4</Value>
+                <Height>40</Height>
+                <Locked>True</Locked>
+                <Width>13</Width>
+                <Left>259</Left>
+                <Top>26</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>Editor_Slider_DimW</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUISlider>
+                <OnChange>Editor_Sdlr_OnChange</OnChange>
+                <HandleImage>180</HandleImage>
+                <HandleOffset>-1</HandleOffset>
+                <BackgroundImage>179</BackgroundImage>
+                <MinValue>4</MinValue>
+                <MaxValue>8</MaxValue>
+                <Value>4</Value>
+                <Height>40</Height>
+                <Locked>True</Locked>
+                <Width>14</Width>
+                <Left>284</Left>
+                <Top>26</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>Editor_Slider_DimH</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>51199</TextColor>
+                <Font>4</Font>
+                <Text>4x4</Text>
+                <Height>12</Height>
+                <Locked>False</Locked>
+                <Width>44</Width>
+                <Left>258</Left>
+                <Top>70</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>Editor_label_dim2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>86</PushedImage>
+                <MouseoverImage>56</MouseoverImage>
+                <Image>26</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>20</Height>
+                <Locked>True</Locked>
+                <Width>20</Width>
+                <Left>256</Left>
+                <Top>105</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>Editor_Btn_Dim_Ok</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>BoardEditor_CTRL_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>87</PushedImage>
+                <MouseoverImage>57</MouseoverImage>
+                <Image>27</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>20</Height>
+                <Locked>True</Locked>
+                <Width>20</Width>
+                <Left>281</Left>
+                <Top>105</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>Editor_Btn_Dim_Cancel</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">Change size?</Text>
+                <Height>23</Height>
+                <Locked>False</Locked>
+                <Width>53</Width>
+                <Left>252</Left>
+                <Top>82</Top>
+                <ZOrder>5</ZOrder>
+                <ID>5</ID>
+                <Name>Label2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
             </Controls>
           </GUIMain>
         </GUIs>
@@ -1060,7 +1535,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>301</StartingRoom>
+            <StartingRoom>303</StartingRoom>
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -1267,6 +1742,17 @@
         <SizeMultiplier>1</SizeMultiplier>
         <VerticalOffset>0</VerticalOffset>
         <LineSpacing>0</LineSpacing>
+      </Font>
+      <Font>
+        <ID>4</ID>
+        <PointSize>16</PointSize>
+        <Name>bfZX_out</Name>
+        <OutlineFont>0</OutlineFont>
+        <OutlineStyle>Automatic</OutlineStyle>
+        <SourceFilename>Sprites/Fonts/bfZX.ttf</SourceFilename>
+        <SizeMultiplier>1</SizeMultiplier>
+        <VerticalOffset>-4</VerticalOffset>
+        <LineSpacing>8</LineSpacing>
       </Font>
     </Fonts>
     <Palette>
@@ -3521,6 +4007,677 @@
                 </SubFolders>
                 <Sprites />
               </SpriteFolder>
+              <SpriteFolder Name="Editor">
+                <SubFolders>
+                  <SpriteFolder Name="TypeButtons">
+                    <SubFolders />
+                    <Sprites>
+                      <Sprite Slot="138" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="139" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="140" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="141" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>11</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="142" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>11</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="143" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>11</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="144" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>22</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="145" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>22</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="146" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>22</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="147" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>33</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="148" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>33</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="149" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>33</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="150" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>44</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="151" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>44</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="152" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>44</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="153" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>55</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="154" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>55</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="155" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>55</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="156" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>66</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="157" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>66</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="158" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>66</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="159" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>77</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="160" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>77</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="161" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>77</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="162" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>88</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="163" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>88</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="164" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>88</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="165" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>99</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="166" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>99</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="167" Width="23" Height="11" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_type_buttons.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>99</OffsetY>
+                          <ImportHeight>11</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                    </Sprites>
+                  </SpriteFolder>
+                  <SpriteFolder Name="BoardDimensions">
+                    <SubFolders />
+                    <Sprites>
+                      <Sprite Slot="168" Width="23" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_board_dimensions.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="169" Width="23" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_board_dimensions.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="170" Width="23" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_board_dimensions.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                    </Sprites>
+                  </SpriteFolder>
+                  <SpriteFolder Name="EditPlayMode">
+                    <SubFolders />
+                    <Sprites>
+                      <Sprite Slot="171" Width="23" Height="17" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_play_edit.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>17</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="172" Width="23" Height="17" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_play_edit.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>17</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="173" Width="23" Height="17" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_play_edit.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>17</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="174" Width="23" Height="17" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_play_edit.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>17</OffsetY>
+                          <ImportHeight>17</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="175" Width="23" Height="17" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_play_edit.png</FileName>
+                          <OffsetX>23</OffsetX>
+                          <OffsetY>17</OffsetY>
+                          <ImportHeight>17</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="176" Width="23" Height="17" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_play_edit.png</FileName>
+                          <OffsetX>46</OffsetX>
+                          <OffsetY>17</OffsetY>
+                          <ImportHeight>17</ImportHeight>
+                          <ImportWidth>23</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                    </Sprites>
+                  </SpriteFolder>
+                  <SpriteFolder Name="Slider">
+                    <SubFolders />
+                    <Sprites>
+                      <Sprite Slot="179" Width="16" Height="40" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_slidr_bg.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>40</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>False</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="180" Width="16" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/Editor/ed_slidr_thumb.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>8</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>False</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                    </Sprites>
+                  </SpriteFolder>
+                </SubFolders>
+                <Sprites>
+                  <Sprite Slot="177" Width="53" Height="134" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/GUI/Editor/ed_bg_board_editor.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>134</ImportHeight>
+                      <ImportWidth>53</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="178" Width="320" Height="180" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/GUI/Editor/ed_bg_board_editor_sz.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>180</ImportHeight>
+                      <ImportWidth>320</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites />
           </SpriteFolder>
@@ -3556,6 +4713,26 @@
                       <OffsetY>0</OffsetY>
                       <ImportHeight>48</ImportHeight>
                       <ImportWidth>48</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="Bg">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="181" Width="1" Height="1" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Board/bg_dark.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>1</ImportHeight>
+                      <ImportWidth>1</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4488,6 +5665,30 @@
                 <Author />
                 <Version />
                 <Key>1777330371</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>BoardEditor.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1443045676</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>BoardEditor.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1443045676</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>

@@ -12,6 +12,8 @@ managed struct InputLayer {
   int NumRows;
   int NumCols;
   
+  bool SwapEnabled;
+  
   int FromCell_Row;
   int FromCell_Col;
   int ToCell_Row;
