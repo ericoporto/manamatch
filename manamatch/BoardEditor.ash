@@ -8,6 +8,7 @@ struct BoardEditor {
   
   import static void Init(Point* pxPosition, Point* widthHeight, GravityDirection dir = eGD_Down);
   import static int Render();
+  import static int GetBgLayer();
   import static void Update();
   import static void Delete();
 };

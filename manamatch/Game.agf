@@ -702,6 +702,23 @@
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
               </GUILabel>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65528</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>31</Height>
+                <Locked>False</Locked>
+                <Width>310</Width>
+                <Left>5</Left>
+                <Top>146</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>debug_lbl_piece_pool</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
             </Controls>
           </GUIMain>
           <GUIMain>
@@ -725,7 +742,7 @@
             </NormalGUI>
             <Controls>
               <GUIButton>
-                <OnClick />
+                <OnClick>button_menu_OnClick</OnClick>
                 <ClickAction>RunScript</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
@@ -743,7 +760,7 @@
                 <Top>0</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
-                <Name>btn_uifloat_menu</Name>
+                <Name>btn_uifloat_startmenu</Name>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
@@ -1076,11 +1093,11 @@
                 <TextColor>51199</TextColor>
                 <Font>4</Font>
                 <Text>4x4</Text>
-                <Height>16</Height>
+                <Height>11</Height>
                 <Locked>True</Locked>
-                <Width>48</Width>
-                <Left>3</Left>
-                <Top>93</Top>
+                <Width>25</Width>
+                <Left>2</Left>
+                <Top>63</Top>
                 <ZOrder>7</ZOrder>
                 <ID>7</ID>
                 <Name>Editor_label_dim1</Name>
@@ -1330,6 +1347,356 @@
               </GUILabel>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>180</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visible>False</Visible>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>196</BackgroundImage>
+              <ID>6</ID>
+              <Name>gMainMenu</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>195</PushedImage>
+                <MouseoverImage>194</MouseoverImage>
+                <Image>193</Image>
+                <Text />
+                <Height>22</Height>
+                <Locked>False</Locked>
+                <Width>96</Width>
+                <Left>112</Left>
+                <Top>56</Top>
+                <ZOrder>1</ZOrder>
+                <ID>0</ID>
+                <Name>MMenu_btn_endless</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>195</PushedImage>
+                <MouseoverImage>194</MouseoverImage>
+                <Image>193</Image>
+                <Text />
+                <Height>22</Height>
+                <Locked>False</Locked>
+                <Width>96</Width>
+                <Left>112</Left>
+                <Top>84</Top>
+                <ZOrder>2</ZOrder>
+                <ID>1</ID>
+                <Name>MMenu_btn_puzzle</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>195</PushedImage>
+                <MouseoverImage>194</MouseoverImage>
+                <Image>193</Image>
+                <Text />
+                <Height>22</Height>
+                <Locked>False</Locked>
+                <Width>96</Width>
+                <Left>112</Left>
+                <Top>112</Top>
+                <ZOrder>3</ZOrder>
+                <ID>2</ID>
+                <Name>MMenu_btn_boardeditor</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>195</PushedImage>
+                <MouseoverImage>194</MouseoverImage>
+                <Image>193</Image>
+                <Text />
+                <Height>22</Height>
+                <Locked>False</Locked>
+                <Width>96</Width>
+                <Left>112</Left>
+                <Top>140</Top>
+                <ZOrder>4</ZOrder>
+                <ID>3</ID>
+                <Name>MMenu_btn_exitgame</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>1040</TextColor>
+                <Font>5</Font>
+                <Text>Endless</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>56</Top>
+                <ZOrder>5</ZOrder>
+                <ID>4</ID>
+                <Name>MMenu_lbl_endless1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>1040</TextColor>
+                <Font>5</Font>
+                <Text>Puzzle</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>84</Top>
+                <ZOrder>6</ZOrder>
+                <ID>5</ID>
+                <Name>MMenu_lbl_puzzle1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>1040</TextColor>
+                <Font>5</Font>
+                <Text xml:space="preserve">Board Editor</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>112</Top>
+                <ZOrder>7</ZOrder>
+                <ID>6</ID>
+                <Name>MMenu_lbl_boardeditor1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>1040</TextColor>
+                <Font>5</Font>
+                <Text xml:space="preserve">Exit Game</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>140</Top>
+                <ZOrder>8</ZOrder>
+                <ID>7</ID>
+                <Name>MMenu_lbl_exitgame1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>87</PushedImage>
+                <MouseoverImage>57</MouseoverImage>
+                <Image>27</Image>
+                <Text />
+                <Height>20</Height>
+                <Locked>False</Locked>
+                <Width>20</Width>
+                <Left>215</Left>
+                <Top>31</Top>
+                <ZOrder>9</ZOrder>
+                <ID>8</ID>
+                <Name>MMenu_btn_exitmenu</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>51199</TextColor>
+                <Font>5</Font>
+                <Text>Endless</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>55</Top>
+                <ZOrder>10</ZOrder>
+                <ID>9</ID>
+                <Name>MMenu_lbl_endless2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>51199</TextColor>
+                <Font>5</Font>
+                <Text>Puzzle</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>83</Top>
+                <ZOrder>11</ZOrder>
+                <ID>10</ID>
+                <Name>MMenu_lbl_puzzle2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>51199</TextColor>
+                <Font>5</Font>
+                <Text xml:space="preserve">Board Editor</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>111</Top>
+                <ZOrder>12</ZOrder>
+                <ID>11</ID>
+                <Name>MMenu_lbl_boardeditor2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Center</TextAlignment>
+                <TextColor>51199</TextColor>
+                <Font>5</Font>
+                <Text xml:space="preserve">Exit Game</Text>
+                <Height>21</Height>
+                <Locked>False</Locked>
+                <Width>97</Width>
+                <Left>112</Left>
+                <Top>139</Top>
+                <ZOrder>13</ZOrder>
+                <ID>12</ID>
+                <Name>MMenu_lbl_exitgame2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>197</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>27</Height>
+                <Locked>False</Locked>
+                <Width>146</Width>
+                <Left>86</Left>
+                <Top>6</Top>
+                <ZOrder>0</ZOrder>
+                <ID>13</ID>
+                <Name>MMenu_btn_logo</Name>
+                <Clickable>False</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>180</Height>
+                <Locked>False</Locked>
+                <Width>77</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>14</ZOrder>
+                <ID>14</ID>
+                <Name>MMenu_btn_exitmenu2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>button_menu_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>180</Height>
+                <Locked>False</Locked>
+                <Width>77</Width>
+                <Left>244</Left>
+                <Top>0</Top>
+                <ZOrder>15</ZOrder>
+                <ID>15</ID>
+                <Name>MMenu_btn_exitmenu3</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -1535,7 +1902,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>303</StartingRoom>
+            <StartingRoom>301</StartingRoom>
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -1753,6 +2120,17 @@
         <SizeMultiplier>1</SizeMultiplier>
         <VerticalOffset>-4</VerticalOffset>
         <LineSpacing>8</LineSpacing>
+      </Font>
+      <Font>
+        <ID>5</ID>
+        <PointSize>16</PointSize>
+        <Name>bfZX</Name>
+        <OutlineFont>0</OutlineFont>
+        <OutlineStyle>None</OutlineStyle>
+        <SourceFilename>Sprites/Fonts/bfZX.ttf</SourceFilename>
+        <SizeMultiplier>1</SizeMultiplier>
+        <VerticalOffset>0</VerticalOffset>
+        <LineSpacing>0</LineSpacing>
       </Font>
     </Fonts>
     <Palette>
@@ -4644,6 +5022,161 @@
                       </Sprite>
                     </Sprites>
                   </SpriteFolder>
+                  <SpriteFolder Name="MousePointers">
+                    <SubFolders />
+                    <Sprites>
+                      <Sprite Slot="183" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="184" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>16</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="185" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>32</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="186" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>48</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="187" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>64</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="188" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>80</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="189" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>96</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="190" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>112</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="191" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>128</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="192" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/Cursor/mouse_pointer_editor.png</FileName>
+                          <OffsetX>144</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>16</ImportHeight>
+                          <ImportWidth>16</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                    </Sprites>
+                  </SpriteFolder>
                 </SubFolders>
                 <Sprites>
                   <Sprite Slot="177" Width="53" Height="134" ColorDepth="32" Resolution="Real" AlphaChannel="True">
@@ -4664,6 +5197,77 @@
                   <Sprite Slot="178" Width="320" Height="180" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                     <Source>
                       <FileName>Sprites/GUI/Editor/ed_bg_board_editor_sz.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>180</ImportHeight>
+                      <ImportWidth>320</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="MainMenu">
+                <SubFolders>
+                  <SpriteFolder Name="Buttons">
+                    <SubFolders />
+                    <Sprites>
+                      <Sprite Slot="193" Width="96" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/MainMenu/empty_button.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>0</OffsetY>
+                          <ImportHeight>22</ImportHeight>
+                          <ImportWidth>96</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="194" Width="96" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/MainMenu/empty_button.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>22</OffsetY>
+                          <ImportHeight>22</ImportHeight>
+                          <ImportWidth>96</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                      <Sprite Slot="195" Width="96" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                        <Source>
+                          <FileName>Sprites/GUI/MainMenu/empty_button.png</FileName>
+                          <OffsetX>0</OffsetX>
+                          <OffsetY>44</OffsetY>
+                          <ImportHeight>22</ImportHeight>
+                          <ImportWidth>96</ImportWidth>
+                          <ImportAsTile>True</ImportAsTile>
+                          <Frame>0</Frame>
+                          <RemapToGamePalette>False</RemapToGamePalette>
+                          <RemapToRoomPalette>False</RemapToRoomPalette>
+                          <ImportMethod>LeaveAsIs</ImportMethod>
+                          <ImportAlphaChannel>True</ImportAlphaChannel>
+                        </Source>
+                      </Sprite>
+                    </Sprites>
+                  </SpriteFolder>
+                </SubFolders>
+                <Sprites>
+                  <Sprite Slot="196" Width="320" Height="180" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/GUI/MainMenu/main_menu_bg.png</FileName>
                       <OffsetX>0</OffsetX>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>180</ImportHeight>
@@ -4733,6 +5337,21 @@
                       <OffsetY>0</OffsetY>
                       <ImportHeight>1</ImportHeight>
                       <ImportWidth>1</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="182" Width="22" Height="22" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Board/bg_single_grid_piece.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>22</ImportHeight>
+                      <ImportWidth>22</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -4816,6 +5435,26 @@
                   <OffsetY>0</OffsetY>
                   <ImportHeight>180</ImportHeight>
                   <ImportWidth>320</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Logo">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="197" Width="146" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Sprites/Logo/logo_white_border.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>27</ImportHeight>
+                  <ImportWidth>146</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -4920,6 +5559,30 @@
           <ScriptFolder Name="Utils">
             <SubFolders />
             <ScriptAndHeaders>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>Utils.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>469653279</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>Utils.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>469653279</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
               <ScriptAndHeader>
                 <ScriptAndHeader_Header>
                   <Script>

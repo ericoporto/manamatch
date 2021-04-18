@@ -18,6 +18,7 @@ enum GravityDirection {
 struct Stage {
   protected TypeRandomizer* TypeRandomizer;
   protected DynamicSprite* RenderSprite;
+  protected DynamicSprite* BgSprite;
   protected Board* Board;
   protected Matrix* MxPieces;
   Score* Score;
@@ -26,12 +27,14 @@ struct Stage {
   bool ReplacePieces;
   bool CountMoves;  
   protected bool IsEditMode;
+  PieceType PieceTypeEditMode;
   
   protected GUI* ScoreGui;
   protected Label* ScoreLabel;
    
   import void Delete();
   import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, String levelDescription = 0, GravityDirection dir = eGD_Down);
+  
   import void SetTypeProbabilities(String typeProbabilities);
   import void LoadBoardFromString(String boardStr);
   import String GetBoardString();
@@ -50,6 +53,8 @@ struct Stage {
   import protected void RemoveRemovingPieces();
   
   // I think most of the below will be protected
+  import protected void _SetPiece(int row, int col, PieceType type);
+  import protected void UpdateBgLayer();
   import protected void DeletePiece(PieceID id);
   import protected IntArray* DetectMatchesInDir(MatchDirection dir);
   import protected void RemoveMatches();
@@ -70,6 +75,7 @@ struct Stage {
   protected IntArray* _CellsToRemove;
   protected bool _TwiceRemoveSlide;
   
+  import int GetBgLayer();
   import int Render();
   import void Update();
 };

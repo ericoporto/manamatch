@@ -10,8 +10,8 @@ managed struct Board extends BoardData{
   import void ResizeRowCol(Matrix* mxPieces, int numRows, int numCols);
   
   import void RandomFill(Matrix* mxPieces, TypeRandomizer* typeRandomizer);
-  import void FromString(Matrix* mxPieces, String boardDescription);
+  import bool FromString(Matrix* mxPieces, String boardDescription);
   import String ToString(Matrix* mxPieces);  
-  import Point* PosToXY(int pos_x, int pos_y);
+  import Point* PosToXY(int row, int col);
   import Point* XYToPos(int x, int y);  
 };

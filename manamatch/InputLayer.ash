@@ -13,6 +13,7 @@ managed struct InputLayer {
   int NumCols;
   
   bool SwapEnabled;
+  bool SetPieceEnabled;
   
   int FromCell_Row;
   int FromCell_Col;
@@ -26,6 +27,7 @@ managed struct InputLayer {
   protected int _MouseClickedY;
   protected bool _MouseLeftDown;
   protected bool _MouseSwapUnchecked;
+  protected bool _MouseSetPieceUnchecked;
   
   import static InputLayer* Create(int x, int y, int width, int height, int tile_size, int numRows, int numCols);
   
@@ -35,4 +37,5 @@ managed struct InputLayer {
   
   import void Update();
   import bool HasSwapped();
+  import bool HasSetPiece();
 };
