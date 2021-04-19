@@ -22,20 +22,21 @@ struct Stage {
   protected Board* Board;
   protected Matrix* MxPieces;
   Score* Score;
+  LevelType LevelType;
+  SwapCounter* SwapCounter;
   protected InputLayer* InputLayer;
   GravityDirection GravityDir;
   bool ReplacePieces;
   bool CountMoves;  
   protected bool IsEditMode;
   PieceType PieceTypeEditMode;
-  
-  protected GUI* ScoreGui;
-  protected Label* ScoreLabel;
-   
+     
   import void Delete();
-  import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, String levelDescription = 0, GravityDirection dir = eGD_Down);
+  import void Init(Point* pxPosition, Point* widthHeight, Point* rowCols, int tileSize, LevelDetails* levelDetails, GravityDirection dir = eGD_Down);
   
-  import void SetTypeProbabilities(String typeProbabilities);
+  import protected void _SetTypeProbabilities(String typeProbabilities);
+  
+  import void SetLevel(LevelDetails* levelDetails);
   import void LoadBoardFromString(String boardStr);
   import String GetBoardString();
   
@@ -62,7 +63,6 @@ struct Stage {
   import protected IntArray* SlideHoles(GravityDirection dir = eGD_Down);
   import protected IntArray* CreateNewPices(GravityDirection dir = eGD_Down);
   
-  import protected void UpdateVisualScore();
   import protected Point* _GetSpawnPos(Point* emptyPos, IntArray* countsByLine, GravityDirection dir);
   import protected void _CheckAfterRemove();
   import protected void _CheckAfterTrySwap();

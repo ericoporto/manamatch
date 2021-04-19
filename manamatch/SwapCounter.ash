@@ -1,18 +1,26 @@
 // new module header
-managed struct Score {
+
+managed struct SwapCounter {
   protected FloatingTextID _FloatingTextID;
   protected bool _Visible;    
   protected int _Value;
+  protected int _MaxSwaps;
   
-  int ChainInteraction;
   int X;
-  int Y;  
+  int Y;
   
   import void SetPosition(int x, int y);
+  
+  import void CountOneSwap();
+  import void UndoSwap();
   
   import attribute bool Visible;
   import bool get_Visible(); // $AUTOCOMPLETEIGNORE$  
   import void set_Visible(bool visible); // $AUTOCOMPLETEIGNORE$ 
+    
+  import attribute int MaxSwaps;
+  import int get_MaxSwaps(); // $AUTOCOMPLETEIGNORE$  
+  import void set_MaxSwaps(int maxSwaps); // $AUTOCOMPLETEIGNORE$  
   
   import attribute int Value;
   import int get_Value(); // $AUTOCOMPLETEIGNORE$  
@@ -22,15 +30,10 @@ managed struct Score {
   import FloatingTextID get_FloatingTextID(); // $AUTOCOMPLETEIGNORE$  
     
   import protected void _SyncFloatingTextValue();
-  import void _InitFloatingText(); // $AUTOCOMPLETEIGNORE$  
-    
+  import void _InitFloatingText(); // $AUTOCOMPLETEIGNORE$
+  
   import protected void _Shake();
-  
-  import void StartChain();
-  import void NextChain();
-  import void ScoreCellMatches(IntArray* pieces);
-  
+    
   import void Delete();  
-  import static Score* Create(Point* position);
+  import static SwapCounter* Create(Point* position);
 };
-

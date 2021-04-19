@@ -663,7 +663,793 @@
     </Rooms>
     <GUIs>
       <GUIFolder Name="Main">
-        <SubFolders />
+        <SubFolders>
+          <GUIFolder Name="FloatingText">
+            <SubFolders />
+            <GUIs>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>7</ID>
+                  <Name>gFloatText_001</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_001</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>8</ID>
+                  <Name>gFloatText_002</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_002</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>9</ID>
+                  <Name>gFloatText_003</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_003</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>10</ID>
+                  <Name>gFloatText_004</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_004</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>11</ID>
+                  <Name>gFloatText_005</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_005</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>12</ID>
+                  <Name>gFloatText_006</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_006</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>13</ID>
+                  <Name>gFloatText_007</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_007</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>14</ID>
+                  <Name>gFloatText_008</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_008</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>15</ID>
+                  <Name>gFloatText_009</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_009</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>16</ID>
+                  <Name>gFloatText_010</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_010</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>17</ID>
+                  <Name>gFloatText_011</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_011</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>18</ID>
+                  <Name>gFloatText_012</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_012</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>19</ID>
+                  <Name>gFloatText_013</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_013</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>20</ID>
+                  <Name>gFloatText_014</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_014</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>21</ID>
+                  <Name>gFloatText_015</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_015</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>22</ID>
+                  <Name>gFloatText_016</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_016</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>23</ID>
+                  <Name>gFloatText_017</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_017</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>24</ID>
+                  <Name>gFloatText_018</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_018</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>25</ID>
+                  <Name>gFloatText_019</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_019</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>26</ID>
+                  <Name>gFloatText_020</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_020</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+            </GUIs>
+          </GUIFolder>
+        </SubFolders>
         <GUIs>
           <GUIMain>
             <NormalGUI>
@@ -823,7 +1609,7 @@
               <Left>224</Left>
               <Top>0</Top>
               <Clickable>False</Clickable>
-              <Visible>True</Visible>
+              <Visible>False</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
@@ -832,7 +1618,7 @@
               <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>2</ID>
-              <Name>gScoreP1</Name>
+              <Name>gScore</Name>
             </NormalGUI>
             <Controls>
               <GUILabel>
@@ -2128,6 +2914,17 @@
         <OutlineFont>0</OutlineFont>
         <OutlineStyle>None</OutlineStyle>
         <SourceFilename>Sprites/Fonts/bfZX.ttf</SourceFilename>
+        <SizeMultiplier>1</SizeMultiplier>
+        <VerticalOffset>0</VerticalOffset>
+        <LineSpacing>0</LineSpacing>
+      </Font>
+      <Font>
+        <ID>6</ID>
+        <PointSize>16</PointSize>
+        <Name>SwapCounter</Name>
+        <OutlineFont>0</OutlineFont>
+        <OutlineStyle>Automatic</OutlineStyle>
+        <SourceFilename>Sprites/Fonts/TomAndJerry.ttf</SourceFilename>
         <SizeMultiplier>1</SizeMultiplier>
         <VerticalOffset>0</VerticalOffset>
         <LineSpacing>0</LineSpacing>
@@ -5448,13 +6245,13 @@
           <SpriteFolder Name="Logo">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="197" Width="146" Height="27" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+              <Sprite Slot="197" Width="147" Height="28" ColorDepth="32" Resolution="Real" AlphaChannel="True">
                 <Source>
-                  <FileName>Sprites/Logo/logo_white_border.png</FileName>
+                  <FileName>Sprites/Logo/logo_white_border_shadow.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
-                  <ImportHeight>27</ImportHeight>
-                  <ImportWidth>146</ImportWidth>
+                  <ImportHeight>28</ImportHeight>
+                  <ImportWidth>147</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -5464,6 +6261,82 @@
                 </Source>
               </Sprite>
             </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gFloatText_00Import">
+            <SubFolders />
+            <Sprites />
           </SpriteFolder>
         </SubFolders>
         <Sprites>
@@ -5559,6 +6432,30 @@
           <ScriptFolder Name="Utils">
             <SubFolders />
             <ScriptAndHeaders>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
+                    <FileName>ColorUtils.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1768222444</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>ColorUtils.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>1768222444</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
               <ScriptAndHeader>
                 <ScriptAndHeader_Header>
                   <Script>
@@ -6256,6 +7153,30 @@
                 <Author />
                 <Version />
                 <Key>939767610</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>SwapCounter.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1495795153</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>SwapCounter.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1495795153</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>

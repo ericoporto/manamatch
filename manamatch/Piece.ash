@@ -1,6 +1,6 @@
 // new module header
 
-#define MAX_PIECES 2048
+#define MAX_PIECES 256
 
 struct Piece { 
   /// Creates a new Piece and returns the ID, use this id to manipulate further
