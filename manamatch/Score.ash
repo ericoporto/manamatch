@@ -28,7 +28,7 @@ managed struct Score {
   
   import void StartChain();
   import void NextChain();
-  import void ScoreCellMatches(IntArray* pieces);
+  import void ScoreCellMatches(IntArray* pieces, Board* board);
   
   import void Delete();  
   import static Score* Create(Point* position);
