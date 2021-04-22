@@ -89,7 +89,7 @@
       <GameScaling>MaxInteger</GameScaling>
       <GameScalingMultiplier>1</GameScalingMultiplier>
       <GraphicsFilter>stdscale</GraphicsFilter>
-      <VSync>False</VSync>
+      <VSync>True</VSync>
       <AAScaledSprites>False</AAScaledSprites>
       <DowngradeTo16bit>False</DowngradeTo16bit>
       <RenderAtScreenResolution>False</RenderAtScreenResolution>
@@ -1447,6 +1447,1583 @@
                   </GUILabel>
                 </Controls>
               </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>27</ID>
+                  <Name>gFloatText_021</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_021</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>28</ID>
+                  <Name>gFloatText_022</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_022</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>29</ID>
+                  <Name>gFloatText_023</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_023</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>30</ID>
+                  <Name>gFloatText_024</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_024</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>31</ID>
+                  <Name>gFloatText_025</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_025</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>32</ID>
+                  <Name>gFloatText_026</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_026</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>33</ID>
+                  <Name>gFloatText_027</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_027</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>32</Height>
+                  <Width>32</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>True</Clickable>
+                  <Visible>True</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>34</ID>
+                  <Name>gFloatText_028</Name>
+                </NormalGUI>
+                <Controls>
+                  <GUILabel>
+                    <TextAlignment>Left</TextAlignment>
+                    <TextColor>0</TextColor>
+                    <Font>0</Font>
+                    <Text xml:space="preserve">New Label</Text>
+                    <Height>16</Height>
+                    <Locked>False</Locked>
+                    <Width>18</Width>
+                    <Left>4</Left>
+                    <Top>4</Top>
+                    <ZOrder>0</ZOrder>
+                    <ID>0</ID>
+                    <Name>floattext_lbl_a_028</Name>
+                    <Clickable>True</Clickable>
+                    <Enabled>True</Enabled>
+                    <Visible>True</Visible>
+                  </GUILabel>
+                </Controls>
+              </GUIMain>
+            </GUIs>
+          </GUIFolder>
+          <GUIFolder Name="Particles">
+            <SubFolders />
+            <GUIs>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>35</ID>
+                  <Name>gParticle_001</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>36</ID>
+                  <Name>gParticle_002</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>37</ID>
+                  <Name>gParticle_003</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>38</ID>
+                  <Name>gParticle_004</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>39</ID>
+                  <Name>gParticle_005</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>40</ID>
+                  <Name>gParticle_006</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>41</ID>
+                  <Name>gParticle_007</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>42</ID>
+                  <Name>gParticle_008</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>43</ID>
+                  <Name>gParticle_009</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>44</ID>
+                  <Name>gParticle_010</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>45</ID>
+                  <Name>gParticle_011</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>46</ID>
+                  <Name>gParticle_012</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>47</ID>
+                  <Name>gParticle_013</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>48</ID>
+                  <Name>gParticle_014</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>49</ID>
+                  <Name>gParticle_015</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>50</ID>
+                  <Name>gParticle_016</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>51</ID>
+                  <Name>gParticle_017</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>52</ID>
+                  <Name>gParticle_018</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>53</ID>
+                  <Name>gParticle_019</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>54</ID>
+                  <Name>gParticle_020</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>55</ID>
+                  <Name>gParticle_021</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>56</ID>
+                  <Name>gParticle_022</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>57</ID>
+                  <Name>gParticle_023</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>58</ID>
+                  <Name>gParticle_024</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>59</ID>
+                  <Name>gParticle_025</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>60</ID>
+                  <Name>gParticle_026</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>61</ID>
+                  <Name>gParticle_027</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>62</ID>
+                  <Name>gParticle_028</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>63</ID>
+                  <Name>gParticle_029</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>64</ID>
+                  <Name>gParticle_030</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>65</ID>
+                  <Name>gParticle_031</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>66</ID>
+                  <Name>gParticle_032</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>67</ID>
+                  <Name>gParticle_033</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>68</ID>
+                  <Name>gParticle_034</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>69</ID>
+                  <Name>gParticle_035</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>70</ID>
+                  <Name>gParticle_036</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>71</ID>
+                  <Name>gParticle_037</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>72</ID>
+                  <Name>gParticle_038</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>73</ID>
+                  <Name>gParticle_039</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>74</ID>
+                  <Name>gParticle_040</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>75</ID>
+                  <Name>gParticle_041</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>76</ID>
+                  <Name>gParticle_042</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>77</ID>
+                  <Name>gParticle_043</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>78</ID>
+                  <Name>gParticle_044</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>79</ID>
+                  <Name>gParticle_045</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>80</ID>
+                  <Name>gParticle_046</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>81</ID>
+                  <Name>gParticle_047</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>82</ID>
+                  <Name>gParticle_048</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>83</ID>
+                  <Name>gParticle_049</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>84</ID>
+                  <Name>gParticle_050</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>85</ID>
+                  <Name>gParticle_051</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>86</ID>
+                  <Name>gParticle_052</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>87</ID>
+                  <Name>gParticle_053</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>88</ID>
+                  <Name>gParticle_054</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>89</ID>
+                  <Name>gParticle_055</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>90</ID>
+                  <Name>gParticle_056</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>91</ID>
+                  <Name>gParticle_057</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>92</ID>
+                  <Name>gParticle_058</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>93</ID>
+                  <Name>gParticle_059</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
+              <GUIMain>
+                <NormalGUI>
+                  <OnClick />
+                  <Height>8</Height>
+                  <Width>8</Width>
+                  <Left>0</Left>
+                  <Top>0</Top>
+                  <Clickable>False</Clickable>
+                  <Visible>False</Visible>
+                  <PopupStyle>Normal</PopupStyle>
+                  <PopupYPos>0</PopupYPos>
+                  <ZOrder>0</ZOrder>
+                  <BorderColor>0</BorderColor>
+                  <Transparency>0</Transparency>
+                  <BackgroundColor>0</BackgroundColor>
+                  <BackgroundImage>0</BackgroundImage>
+                  <ID>94</ID>
+                  <Name>gParticle_060</Name>
+                </NormalGUI>
+                <Controls />
+              </GUIMain>
             </GUIs>
           </GUIFolder>
         </SubFolders>
@@ -1518,7 +3095,7 @@
               <Visible>True</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>2</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -1651,7 +3228,7 @@
               <Visible>True</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>2</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -1697,7 +3274,7 @@
               <Visible>False</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>3</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -2000,7 +3577,7 @@
               <Visible>False</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>4</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -2144,7 +3721,7 @@
               <Visible>False</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>16</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -6262,79 +7839,203 @@
               </Sprite>
             </Sprites>
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="Particles">
+            <SubFolders>
+              <SpriteFolder Name="PieceParticles">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="198" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="199" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>8</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="200" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>16</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="201" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>24</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="202" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>32</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="203" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>40</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="204" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>48</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="205" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>56</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="206" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>64</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="207" Width="8" Height="8" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Particles/piece_particles_00.png</FileName>
+                      <OffsetX>72</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>8</ImportHeight>
+                      <ImportWidth>8</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+            </SubFolders>
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
-            <SubFolders />
-            <Sprites />
-          </SpriteFolder>
-          <SpriteFolder Name="gFloatText_00Import">
+          <SpriteFolder Name="gParticle_000Import">
             <SubFolders />
             <Sprites />
           </SpriteFolder>
@@ -7033,6 +8734,54 @@
                 <Author />
                 <Version />
                 <Key>423752644</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>Particles.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>373894532</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>Particles.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>373894532</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>PieceParticle.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1827623848</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>PieceParticle.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1827623848</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>

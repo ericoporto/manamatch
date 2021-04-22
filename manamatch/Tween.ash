@@ -33,7 +33,7 @@
 // Max number of simultaneous tweens that this module can play
 // Feel free to change this number, but the higher it is, the slower it might be
 // So just increase or decrease it to however many you need.
-#define Tween_MAX_INSTANCES 64
+#define Tween_MAX_INSTANCES 96
 
 // If true, it stops all tweens upon leaving the room
 // If false, it stops most tweens except Audio, GUI, and some screen-related tweens.
